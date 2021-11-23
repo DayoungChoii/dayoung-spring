@@ -1,9 +1,11 @@
 package dayoung.example.dayoungspring.repository;
 
 import dayoung.example.dayoungspring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public interface MemberRepository {
 
