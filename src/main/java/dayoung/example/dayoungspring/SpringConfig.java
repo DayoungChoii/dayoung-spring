@@ -1,6 +1,7 @@
 package dayoung.example.dayoungspring;
 
 import dayoung.example.dayoungspring.repository.JdbcMemberRepository;
+import dayoung.example.dayoungspring.repository.JdbcTemplateMemberRepository;
 import dayoung.example.dayoungspring.repository.MemberRepository;
 import dayoung.example.dayoungspring.repository.MemoryMemberRepository;
 import dayoung.example.dayoungspring.service.MemberService;
@@ -28,7 +29,9 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository(){
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
+
 
 }
